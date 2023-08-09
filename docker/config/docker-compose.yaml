@@ -9,8 +9,8 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ../../src/api:/app/api
-      - ../../local:/app/local
+      - ../../src:/app/src
+      - ../../docker:/app/local
       - ../../test:/app/test
     depends_on: 
       - db
