@@ -14,7 +14,6 @@ COPY docker ./docker
 
 # Install pip requirements
 RUN python -m pip install -r requirements.txt
-RUN python -m pip install -r local/requirements.txt
 
 
 ENV PYTHONPATH "${PYTHONPATH}:/src:/local"
