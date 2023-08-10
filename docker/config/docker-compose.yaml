@@ -10,7 +10,7 @@ services:
       - "8000:80"
     volumes:
       - ../../src:/app/src
-      - ../../docker:/app/local
+      - ../../docker:/app/docker
       - ../../test:/app/test
     depends_on: 
       - db

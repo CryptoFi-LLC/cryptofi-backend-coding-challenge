@@ -16,6 +16,6 @@ COPY docker ./docker
 RUN python -m pip install -r requirements.txt
 
 
-ENV PYTHONPATH "${PYTHONPATH}:/src:/local"
+ENV PYTHONPATH "${PYTHONPATH}:/src:/test"
 
 CMD ["sh", "./docker/scripts/entrypoint.sh"]
