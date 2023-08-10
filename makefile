@@ -11,6 +11,5 @@ run:
 stop:
 	docker compose -f ./docker/config/docker-compose.yaml down -v --remove-orphans
 
-# This command only works if a container is running
 run-testsuite:
-	docker compose -f ./docker/config/docker-compose.yaml run cryptofi-backend-coding-challenge python -m unittest
+	docker compose -f ./docker/config/docker-compose.yaml run cryptofi-backend-coding-challenge python -m pytest

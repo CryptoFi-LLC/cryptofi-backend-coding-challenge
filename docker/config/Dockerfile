@@ -11,6 +11,7 @@ WORKDIR /app
 COPY requirements.txt .
 COPY src ./src
 COPY docker ./docker
+COPY test ./test
 
 # Install pip requirements
 RUN python -m pip install -r requirements.txt
