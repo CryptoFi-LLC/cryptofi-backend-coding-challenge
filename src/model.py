@@ -1,7 +1,8 @@
 import os
 from abc import abstractmethod
 from dyntastic import Dyntastic
-from pydantic import Field
+from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class DynamoDbModelBase(Dyntastic):
@@ -22,8 +23,14 @@ class DynamoDbModelBase(Dyntastic):
     range_key: str = Field(default=None, title="DynamoDB Sort Key")
 
 
+class UserInfo(BaseModel):
+    first_name: str
+    last_name: str
+
+
 class User(DynamoDbModelBase):
     __table_name__ = "User"
+    info: Optional[UserInfo]
 
 
 class RecurringOrder(DynamoDbModelBase):
