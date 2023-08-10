@@ -6,7 +6,7 @@ from typing import Optional
 
 
 class DynamoDbModelBase(Dyntastic):
-    __table_region__ = os.environ.get("REGION_NAME")
+    __table_region__ = os.environ.get("AWS_REGION")
     __table_host__ = os.environ.get("DYNAMO_ENDPOINT")
     __hash_key__ = "hash_key"
     __range_key__ = "range_key"
