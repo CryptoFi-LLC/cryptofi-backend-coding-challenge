@@ -1,10 +1,24 @@
 # Coding Challenge Readme
 
-Welcome to the **[Challenge Name]** coding challenge! This challenge is designed to assess your coding skills and problem-solving abilities. Before you begin, please take a moment to read through this readme to understand the challenge requirements, instructions, and guidelines.
+Welcome to the CryptoFi Backend Engineering coding challenge! This challenge is designed to assess your coding skills, problem-solving abilities, and "grit". Before you begin, please take a moment to read through this readme to understand the challenge requirements, instructions, and guidelines.
 
 ## Challenge Description
 
-[Provide a brief overview of the challenge. What is the problem you're asking the participants to solve? What are the specific tasks or goals they need to achieve?]
+In this challenge, you will be asked to create a simple api that will allow a user to create (POST) a recurring crypto order, i.e. an order that gets executed at a specific time indefinitely. This coding challenge will require you to get famaliar with libraries such as FastApi, Pydantic, and Dyntastic as well as test your data structure skills in a no sql database (Dynamodb).
+
+### Requirements
+- A POST route that allows a user to input a recurring order. 
+- A GET route to return a said user's recurring orders. 
+  - For example - I pass in User `1`, I will receive all recurring orders for User `1`
+- A recurring order can be for BTC or ETH only (validation check)
+- A recurring order frequency can be Daily or Bi-Monthly only (validation check)
+- A recurring order must have an associated USD amount with it greater than 0.
+- A recurring order must be associated with a user
+- A user can only ever have 1 recurring order for a given cryto/frequency pair
+  - For example: a User can only have 1 recurring trade with a `Daily` frequency and for crypto `BTC`. If a second recurring order were to be placed for  `Daily`/`BTC` a validation error is expected to be raised
+
+**Optional**
+- Write a test suite in the `/test` folder for the POST/GET routes, database models, and their associated requirements.
 
 ## Getting Started
 
@@ -54,7 +68,3 @@ Happy coding!
 **[Your Name]**
 **[Your Organization]**
 **[Date]**
-
----
-
-*Note: This template is a starting point. Customize it to match the specific details of your coding challenge, such as the challenge name, instructions, evaluation criteria, and contact information.*
