@@ -8,7 +8,7 @@ In this challenge, you will be asked to create a simple api that will allow a us
 
 ### Requirements
 - A POST route that allows a user to input a recurring order. 
-- A GET route to return a said user's recurring orders. 
+- A GET route to return said user's recurring orders. 
   - For example - I pass in User `1`, I will receive all recurring orders for User `1`
 - A recurring order can be for BTC or ETH only (validation check)
 - A recurring order's frequency can be Daily or Bi-Monthly only (validation check)
@@ -25,7 +25,7 @@ In this challenge, you will be asked to create a simple api that will allow a us
 Follow these steps to get started with the challenge:
 
 1. **Fork**: Start by forking this repository to your own GitHub account.
-1. **Clone**: Clone the forked repository to your local machine:
+1. **Clone**: Clone the forked repository to your local machine.
 1. **Local Environment Setup**:
    - Ensure Docker is installed and running on your machine. For Mac users, the easiest way to do this is by downloading [Docker Desktop](https://www.docker.com/products/docker-desktop/)
    - Ensure `Make` is installed on your computer. For Mac Users this should already be pre installed
@@ -49,7 +49,7 @@ To submit your solution, follow these steps:
 1. **Push to GitHub**: Push your committed changes to your forked repository on GitHub.
 1. **Invite Us**: Invite @alexanderlukens, @cooncesean, and @RamseyV to review the repo
 1. **Loom Video**: Create a short [loom video](https://www.loom.com/) (5 minutes or less) describing your approach and demoing the coding challenge. 
-1. **Email**: Once complete, please reach out to [Becca](mailto:becca@cryptofi.tech) our HR representive with the loom video attached and we will be in touch!
+1. **Email**: Once complete, please reach out to [Becca](mailto:becca@cryptofi.tech) our HR representive with the Loom video attached and we will be in touch!
 
 In your pull request, include the following:
 
