@@ -16,7 +16,7 @@ This challenge should take 4-6 hours to complete.
 - A recurring order's frequency can be Daily or Bi-Monthly only (validation check)
 - A recurring order must have an associated USD amount with it greater than 0.
 - A recurring order must be associated with a user
-- A user can only ever have 1 recurring order for a given cryto/frequency pair
+- A user can only ever have 1 recurring order for a given crypto/frequency pair
   - For example: a User can only have 1 recurring order with a `Daily` frequency and for crypto `BTC`. If a second recurring order were to be placed for  `Daily`/`BTC` a validation error is expected to be raised
 
 **Optional**
