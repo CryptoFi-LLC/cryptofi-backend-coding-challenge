@@ -26,8 +26,8 @@ This challenge should take 4-6 hours to complete.
 
 Follow these steps to get started with the challenge:
 
-1. **Fork**: Start by forking this repository to your own GitHub account.
 1. **Clone**: Clone the forked repository to your local machine.
+1. **New Private Repo**: Create a new private repo on your personal github account from the cloned coding challenge repo.
 1. **Local Environment Setup**:
    - Ensure Docker is installed and running on your machine. For Mac users, the easiest way to do this is by downloading [Docker Desktop](https://www.docker.com/products/docker-desktop/)
    - Ensure `Make` is installed on your computer. For Mac Users this should already be pre installed
